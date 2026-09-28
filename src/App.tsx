@@ -47,7 +47,7 @@ export const App = () => {
           <Routes>
             <Route path="/" element={<h1 className="title">Home page</h1>} />
             <Route path="home" element={<Navigate to="/" />} />
-            <Route path="tabs" element={<Tabs tabs={tabs} />}>
+            <Route path="tabs">
               <Route index element={<Tabs tabs={tabs} />} />
               <Route path=":tabId" element={<Tabs tabs={tabs} />} />
             </Route>

@@ -31,7 +31,7 @@ export const Tabs: React.FC<Props> = React.memo(function Tabs({ tabs }) {
               data-cy="Tab"
               key={tab.id}
             >
-              <Link to={`${tab.id}`} data-cy="TabLink">
+              <Link to={`/tabs/${tab.id}`} data-cy="TabLink">
                 {tab.title}
               </Link>
             </li>
